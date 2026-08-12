@@ -13,7 +13,7 @@ create table ATOR(
     IndicacaoOscar int(2),
     Oscar int(2)
 
-)
+);
 
 create table FILME(
 
@@ -23,7 +23,7 @@ create table FILME(
     Orcamento int(15) not null,
     Tempo int(2) not null
 
-)
+);
 
 create table PERSONAGEM(
 
@@ -129,3 +129,10 @@ INSERT INTO PERSONAGEM (CodFilme, CodAtor, Personagem, Cache_valor) VALUES
 ('f7', 'a8', 'Bill', 5000000),
 ('f8', 'a3', 'Bette', 3000000),
 ('f9', 'a9', 'Blade', 10000000);
+
+
+select * from ATOR;
+select * from FILME;
+select * from PERSONAGEM;
+
+drop database Cinema;
